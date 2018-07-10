@@ -1,0 +1,188 @@
+/*--------------------------------------------------------------
+>>>>>> CSSeco Styles(usualy overwrite bootsrap styles :))
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+	#  Imports
+	##  Fonts
+    ##  Bootstrap
+	#  CSSeco Variables
+	#  Overides(bs)
+	#  Helper Classes
+	#  CSSeco Styles
+	## Body
+	## Header
+	## Footer
+	## Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#  Imports 
+##  Fonts
+--------------------------------------------------------------*/
+//@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+//@import url('../fonts/fonts.css');
+
+/*--------------------------------------------------------------
+#  Imports
+##  Bootstrap
+--------------------------------------------------------------*/
+//@import "../../vendor/bs4/scss/bootstrap";
+
+/*--------------------------------------------------------------
+#  CSSeco Variables
+--------------------------------------------------------------*/
+/* BreakPoint */
+$csseco_bp_320	:    320px	!default;
+$csseco_bp_576	:    576px	!default;
+$csseco_bp_768	:    768px	!default;
+$csseco_bp_992	:    992px	!default;
+$csseco_bp_1200	:    1200px	!default;
+
+/*--------------------------------------------------------------
+#  Overides(bs)
+--------------------------------------------------------------*/
+body {}
+
+/*--------------------------------------------------------------
+#  Helper Classes
+--------------------------------------------------------------*/
+.posrel {
+	position: relative!important;
+}
+
+.elem-hidden {
+	display: none!important;
+}
+
+.table {
+	display: table;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	.table-cell {
+		display: table-cell;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		vertical-align: middle;
+		width: 100%;
+	}
+}
+
+/*--------------------------------------------------------------
+#  CSSeco Styles
+## Body
+--------------------------------------------------------------*/
+div#site-wrapper {
+
+/*--------------------------------------------------------------
+#  CSSeco Styles
+## Header
+--------------------------------------------------------------*/
+	header#header {}
+	
+/*--------------------------------------------------------------
+#  CSSeco Styles
+## Footer
+--------------------------------------------------------------*/
+	footer#footer {}
+	
+/*--------------------------------------------------------------
+#  CSSeco Styles
+## Content
+--------------------------------------------------------------*/
+	.action {
+		label {}
+	}
+	.result {
+		.formats {
+			display: none;
+			text-align: center;
+			h1 {
+				margin-bottom: 40px;
+			}
+			.wrapper {
+				border: 1px solid #000;
+				border-radius: 10px;
+				padding: 10px;
+				text-align: left;
+				p.mtext {
+					font-size: 14px;
+					line-height: normal;
+					margin-bottom: .5rem;
+				}
+				img {}
+				h3.headline {
+					font-size: 16px;
+				}
+				p.linkdesc {
+					color: rgba(0, 0, 0, .6);
+					font-size: 14px;
+					line-height: normal;
+					margin: 0;
+				}
+			}
+			
+		}
+		.FacebookFeed {
+			.wrapper {
+				margin: 0 auto;
+				max-width: 400px;
+				width: 100%;
+				.hl-ld {
+					max-width: 80%;
+					padding: 10px;
+				}
+			}
+		}
+		.FacebookRightColumn {
+			.wrapper {
+				margin: 0 auto;
+				max-width: 400px;
+				width: 100%;
+			}
+		}
+		.FacebookInstantArticles,
+		.AudienceNetworkNative {
+			.wrapper {
+				margin: 0 auto;
+				max-width: 400px;
+				width: 100%;
+				.hl-ld {
+					padding: 10px;
+				}
+			}
+		}
+		
+	}
+	table {
+		button.delete {
+			cursor: pointer;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

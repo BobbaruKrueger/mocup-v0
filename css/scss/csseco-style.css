@@ -1,0 +1,149 @@
+/*--------------------------------------------------------------
+>>>>>> CSSeco Styles(usualy overwrite bootsrap styles :))
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+	#  Imports
+	##  Fonts
+    ##  Bootstrap
+	#  CSSeco Variables
+	#  Overides(bs)
+	#  Helper Classes
+	#  CSSeco Styles
+	## Body
+	## Header
+	## Footer
+	## Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#  Imports 
+##  Fonts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#  Imports
+##  Bootstrap
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#  CSSeco Variables
+--------------------------------------------------------------*/
+/* BreakPoint */
+/*--------------------------------------------------------------
+#  Overides(bs)
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#  Helper Classes
+--------------------------------------------------------------*/
+/* line 48, csseco-style.scss */
+.posrel {
+  position: relative !important;
+}
+
+/* line 52, csseco-style.scss */
+.elem-hidden {
+  display: none !important;
+}
+
+/* line 56, csseco-style.scss */
+.table {
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 62, csseco-style.scss */
+.table .table-cell {
+  display: table-cell;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+#  CSSeco Styles
+## Body
+--------------------------------------------------------------*/
+/* line 76, csseco-style.scss */
+div#site-wrapper {
+  /*--------------------------------------------------------------
+  #  CSSeco Styles
+  ## Header
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  #  CSSeco Styles
+  ## Footer
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  #  CSSeco Styles
+  ## Content
+  --------------------------------------------------------------*/
+}
+/* line 98, csseco-style.scss */
+div#site-wrapper .result .formats {
+  display: none;
+  text-align: center;
+}
+/* line 101, csseco-style.scss */
+div#site-wrapper .result .formats h1 {
+  margin-bottom: 40px;
+}
+/* line 104, csseco-style.scss */
+div#site-wrapper .result .formats .wrapper {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+}
+/* line 109, csseco-style.scss */
+div#site-wrapper .result .formats .wrapper p.mtext {
+  font-size: 14px;
+  line-height: normal;
+  margin-bottom: .5rem;
+}
+/* line 115, csseco-style.scss */
+div#site-wrapper .result .formats .wrapper h3.headline {
+  font-size: 16px;
+}
+/* line 118, csseco-style.scss */
+div#site-wrapper .result .formats .wrapper p.linkdesc {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: normal;
+  margin: 0;
+}
+/* line 128, csseco-style.scss */
+div#site-wrapper .result .FacebookFeed .wrapper {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+/* line 132, csseco-style.scss */
+div#site-wrapper .result .FacebookFeed .wrapper .hl-ld {
+  max-width: 80%;
+  padding: 10px;
+}
+/* line 139, csseco-style.scss */
+div#site-wrapper .result .FacebookRightColumn .wrapper {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+/* line 147, csseco-style.scss */
+div#site-wrapper .result .FacebookInstantArticles .wrapper,
+div#site-wrapper .result .AudienceNetworkNative .wrapper {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+/* line 151, csseco-style.scss */
+div#site-wrapper .result .FacebookInstantArticles .wrapper .hl-ld,
+div#site-wrapper .result .AudienceNetworkNative .wrapper .hl-ld {
+  padding: 10px;
+}
+/* line 159, csseco-style.scss */
+div#site-wrapper table button.delete {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=csseco-style.css.map */
