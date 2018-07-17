@@ -111,7 +111,11 @@ div#site-wrapper {
 					line-height: normal;
 					margin-bottom: .5rem;
 				}
-				img {}
+				img {
+					max-height: 150px;
+					max-width: 100%;
+					width: 100%;
+				}
 				h3.headline {
 					font-size: 16px;
 				}
@@ -155,8 +159,40 @@ div#site-wrapper {
 		}
 		
 	}
+	#formW {
+		.toomuch {
+			background-color: red!important;
+			color: white;
+		}
+		.dis {
+			background-color: #e9ecef;
+			opacity: .6;
+		}
+	}
 	table {
-		button.delete {
+		td.edit {
+			padding-bottom: 24px;
+			padding-top: 24px;
+			position: relative;
+			div {
+				form {
+					display: flex;
+					margin-top: 5px;
+					max-width: 100%;
+					width: 100%;
+					input {
+						margin-right: 5px;
+						flex: 1;
+					}
+				}
+				a.aedit {
+					bottom: 0;
+					right: 0;
+					position: absolute;
+				}
+			}
+		}
+		button {
 			cursor: pointer;
 		}
 	}

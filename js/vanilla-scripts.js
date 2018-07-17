@@ -25,7 +25,7 @@ var FacebookFeed_nume 					= 'Facebook Feed';
 var FacebookFeed_mtextchar				= 125;
 var FacebookFeed_headlinechar			= 25;
 var FacebookFeed_linkdescchar			= 30;
-var FacebookFeed_value	 				= '1-1';
+var FacebookFeed_value	 				= 'facebookfeed';
 var FacebookFeed_class	 				= 'FacebookFeed';
 const FacebookFeed 						= new Image( 'image', FacebookFeed_nume, main_text, FacebookFeed_mtextchar, main_headline, FacebookFeed_headlinechar, main_linkdesc, FacebookFeed_linkdescchar, FacebookFeed_value, main_img, FacebookFeed_class );
 
@@ -36,12 +36,12 @@ var FacebookRightColumn_mtextchar		= 126;
 var FacebookRightColumn_headlinechar	= 26;
 //var FacebookRightColumn_linkdescchar	= 30;
 var FacebookRightColumn_linkdescchar	= 31;
-var FacebookRightColumn_value	 		= '1-2';
+var FacebookRightColumn_value	 		= 'facebookrightcolumn';
 var FacebookRightColumn_class	 		= 'FacebookRightColumn';
 const FacebookRightColumn 				= new Image( 'image', FacebookRightColumn_nume, main_text, FacebookRightColumn_mtextchar, main_headline, FacebookRightColumn_headlinechar, main_linkdesc, FacebookRightColumn_linkdescchar, FacebookRightColumn_value, main_img, FacebookRightColumn_class );
 
 var FacebookInstantArticles_nume 		= 'Facebook Instant Articles';
-var FacebookInstantArticles_value	 	= '1-3';
+var FacebookInstantArticles_value	 	= 'facebookinstantarticles';
 //var FacebookInstantArticles_mtextchar	= 125;
 var FacebookInstantArticles_mtextchar	= 127;
 //var FacebookInstantArticles_headlinechar= 25;
@@ -52,7 +52,7 @@ var FacebookInstantArticles_class	 	= 'FacebookInstantArticles';
 const FacebookInstantArticles 			= new Image( 'image', FacebookInstantArticles_nume, main_text, FacebookInstantArticles_mtextchar, main_headline, FacebookInstantArticles_headlinechar, main_linkdesc, FacebookInstantArticles_linkdescchar, FacebookInstantArticles_value, main_img, FacebookInstantArticles_class );
 
 var AudienceNetworkNative_nume 			= 'Audience Network Native';
-var AudienceNetworkNative_value	 		= '1-4';
+var AudienceNetworkNative_value	 		= 'audiencenetworknative';
 //var AudienceNetworkNative_mtextchar		= 125;
 var AudienceNetworkNative_mtextchar		= 128;
 //var AudienceNetworkNative_headlinechar	= 25;
@@ -71,9 +71,11 @@ const selectArray = [
 ];
 
 // Print'em via for loop
-var text = '<option> -- Select -- </option>';
+var text = '<option value="0"> -- Select -- </option>';
 for (var i = 0; i < selectArray.length; i++) {
-    text += '<option value="' + selectArray[i].value + '" class="' + selectArray[i].clasa + '">' + selectArray[i].tip.replace(/\b\w/g, function(l){ return l.toUpperCase() }) + ' - ' + selectArray[i].nume + '</option>';
+	var selected = ( selectArray[i].value == selectVar ? 'selected' : '' );
+//    text += '<option value="' + selectArray[i].value + '" class="' + selectArray[i].clasa + '">' + selectArray[i].tip.replace(/\b\w/g, function(l){ return l.toUpperCase() }) + ' - ' + selectArray[i].nume + '</option>';
+	text += '<option ' + selected + ' value="' + selectArray[i].value + '" class="' + selectArray[i].clasa + '">' + selectArray[i].nume + '</option>';
 	
 	
 	document.getElementsByClassName("mtext")[0].innerHTML = selectArray[i].mtext;
